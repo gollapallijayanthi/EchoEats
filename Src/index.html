@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EchoEats - Food Donation Platform</title>
+
+  <!-- Link to your CSS and JS files -->
+  <link rel="stylesheet" href="index.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Echo<span>Eats</span></div>
+    <ul class="nav-links">
+      <!-- <li><a href="index.html">Home</a></li> -->
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span>EchoEats</span></h1>
+      <p>Join us in reducing food wastage by donating or requesting food. Together, we can make a difference.</p>
+      <div class="hero-buttons">
+        <button class="login-btn" onclick="location.href='login.html'">Login</button>
+        <button class="signup-btn" onclick="location.href='signup.html'">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Donations Section -->
+  <section class="donations">
+    <h2>Available Donations</h2>
+    <p>Browse available food donations in your area and help reduce food waste while supporting those in need.</p>
+    <div class="donation-list" id="donationList">
+      <!-- Donation cards will be inserted here by JS -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 EchoEats. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

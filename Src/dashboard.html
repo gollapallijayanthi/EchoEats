@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - EchoEats</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+  <div class="navbar-container">
+    <div class="logo">Echo<span>Eats</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="donate.html">Donate</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Dashboard Main Content -->
+  <main class="dashboard">
+    <h1>Donation Dashboard</h1>
+    <p>Here are the latest food donations submitted:</p>
+    <div id="donationList" class="donation-list"></div>
+
+    <button class="clear-btn" onclick="localStorage.clear(); alert('All data cleared!'); location.reload();">
+      Clear All EchoEats Data
+    </button>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 EchoEats. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

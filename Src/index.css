@@ -1,0 +1,186 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #101010;
+  color: white;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #facc15;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg,  #f76205 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  color: white;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-buttons button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn {
+  background-color: white;
+  color: #f97316;
+}
+
+.login-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.signup-btn {
+  background-color: #facc15;
+  color: #333;
+}
+
+.signup-btn:hover {
+  background-color: #fde047;
+}
+
+/* Donations Section */
+.donations {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.donations h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f97316;
+}
+
+.donations p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #555;
+}
+
+.donation-list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 0 2rem;
+}
+
+.donation-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #fffdf7;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.donation-card:hover {
+  transform: translateY(-5px);
+}
+
+.donation-card h3 {
+  color: #f97316;
+  margin-bottom: 0.5rem;
+}
+
+.donation-card button {
+  margin-top: 0.5rem;
+  background-color: #f97316;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.donation-card button:hover {
+  background-color: #ea580c;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: #f97316;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}

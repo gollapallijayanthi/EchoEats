@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate Food - EchoEats</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #ffffffcc;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover, nav a.active {
+      color: orange;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 3rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #1e293b;
+      margin-bottom: 1.5rem;
+    }
+
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 500;
+      color: #374151;
+    }
+
+    form input {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.3rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button[type="submit"] {
+      margin-top: 2rem;
+      width: 100%;
+      background-color: #f97316;
+      color: white;
+      padding: 0.9rem;
+      border: none;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #ea580c;
+    }
+
+    #donationMessage {
+      text-align: center;
+      font-weight: 500;
+      color: green;
+    }
+
+    footer {
+      background: #1e293b;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Echo<span style="color: orange;">Eats</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="donate.html" class="active">Donate</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Food Donation Form</h2>
+    <form id="donationForm">
+      <label for="donorName">Your Name:</label>
+      <input type="text" id="donorName" required />
+
+      <label for="foodItem">Food Item:</label>
+      <input type="text" id="foodItem" required />
+
+      <label for="quantity">Quantity:</label>
+      <input type="text" id="quantity" required />
+
+      <label for="location">Pickup Location:</label>
+      <input type="text" id="location" required />
+
+      <label for="expiry">Best Before Date:</label>
+      <input type="date" id="expiry" required />
+
+      <button type="submit">Submit Donation</button>
+    </form>
+    <p id="donationMessage"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EchoEats. All rights reserved.</p>
+  </footer>
+</body>
+</html>
